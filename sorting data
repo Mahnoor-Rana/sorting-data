@@ -1,0 +1,7 @@
+set.seed(12345)
+x<-data.frame('var1'= sample(1:5),'var2'= sample(11:15))
+x<-x[sample(1:5),]
+x
+sort(x$var1)
+sort(x$var1,decreasing = TRUE)
+x[order(x$var1),]
